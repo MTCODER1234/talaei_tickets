@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talaei Tickets</title>
+
+    <link rel="preload" as="image" href="images/Banners/Ahmadvand banner.webp">
+    <link rel="preload" as="image" href="images/Banners/Ghiasi Banner.webp">
+    <link rel="preload" as="image" href="images/Banners/Mohsen Yeganh.webp">
+    <link rel="preload" as="image" href="images/Banners/Champions League.webp">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="load-content">
+        <div class="loader"></div>
+        <h2 class="load-text">LOADING<span class="dots"></span></h2>
+    </section>
+
+    <section class="content">
+        <!-- Nav Bar -->
+        <div class="navigation-bar-parent">
+            <div class="navigation-bar-child">
+
+                <div class="Talaei-Tickets-Logo">
+                    <p>TALAEI TICKETS</p>
+                </div>
+
+                <div class="navigation-bar-options">
+                    <div class="search-box-button">
+                        <i class="fas fa-search search-icon-button"></i> 
+                        <input type="text" placeholder="search...">         
+                    </div>
+                    <button id="music-button-nav">MUSIC</button>
+                    <button id="comedy-button-nav">COMEDY</button>
+                    <button id="sport-button-nav">SOCCER</button>
+                </div> 
+
+                <div class="user">
+                    <div class="notification">
+                        <i class="fas fa-bell notification-icon"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <i class='fas fa-user-circle user-icon'></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top section -->
+        <section class="top-section">
+            <h1 id="title">TALAEI TICKETS</h1>
+
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i> 
+                <input id="search-bar" type="text" placeholder="search event...">         
+            </div>
+
+            <div class="buttons">
+                <div class="button-and-text">
+                    <button class="button" id="music-button">
+                        <i class="fas fa-music icons"></i>
+                    </button>
+                    <p>Music</p>
+                </div>
+                <div class="button-and-text">
+                    <button class="button" id="comedy-button">
+                        <i class="fas fa-theater-masks icons"></i>
+                    </button>
+                    <p>Comedy</p>
+                </div>
+                <div class="button-and-text">
+                    <button class="button" id="sport-button">
+                        <i class="fas fa-futbol icons"></i>
+                    </button>
+                    <p>Soccer</p>
+                </div>         
+            </div>
+
+            <div class="slider">
+                <div class="slider-track">
+                    <img class="slider-images" src="images/Banners/Ahmadvand banner.webp" alt="Mehdi Ahmadvand" loading="lazy">   
+                    <img class="slider-images" src="images/Banners/Ghiasi Banner.webp" alt="Amirhoussein Ghiasi" loading="lazy">   
+                    <img class="slider-images" src="images/Banners/Mohsen Yeganh.webp" alt="Mohsen Yeganeh" loading="lazy">
+                    <img class="slider-images" src="images/Banners/Champions League.webp" alt="Champions League" loading="lazy">
+                    <img class="slider-images" src="images/Banners/Ahmadvand banner.webp" alt="Mehdi Ahmadvand" loading="lazy">   
+                </div>
+            </div>
+
+        </section>
+
+        <!-- All shows -->
+        <section class="container-all-shows">
+            <div class="all-shows" id="most-popular">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">RECENTLY TRENDING</h2>
+                </div>
+
+                <div class="show-page-containers">
+                    <div class="show-page first-set">
+                        <div class="show-button" data-id="14">
+                            <img src="images/Button_images/amirhoussein_ghiasi_popular_button.webp"  alt="Amirhoussein Ghiasi">
+                            <div class="inner-shadow">
+                                <p class="show-title">1. Amirhoussein Ghiasi</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="8">
+                            <img src="images/Button_images/mehdi_ahmadvand_popular_button.webp"  alt="Mehdi Ahmadvand">
+                            <div class="inner-shadow">
+                                <p class="show-title">2. Mehdi Ahmadvand</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="2">
+                            <img src="images/Button_images/mohsen_yeganeh_popular_button.webp"  alt="Mohsen Yeganeh">
+                            <div class="inner-shadow">
+                                <p class="show-title">3. Mohsen Yeganeh</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="23">
+                            <img src="images/Button_images/bayern_munich_mainz_button.webp"  alt="Bayern Munich VS Mainz">
+                            <div class="inner-shadow">
+                                <p class="show-title">4. FCBM VS Mainz</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="all-shows" id="follow-shows">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">FOLLOW THEM!</h2>
+                    <button class="follow-button-literal">
+                        <p>follow more</p>
+                        <i class="fas fa-angle-right right-left-icon"></i>
+                    </button>
+                </div>
+
+                <div class="show-page-containers">
+                    <div class="show-page first-set">
+                        <div class="follow-show-button">
+                            <img src="images/Pfps/mehdi_ahmdvand_pfp.webp"  alt="Mehdi Ahmadvand">
+                            <div class="inner-shadow follow-inner-shadow">
+                                <p class="show-title follow-show-title">Mehdi Ahmadvand</p>
+                                <button class="follow-button">FOLLOW</button>
+                            </div>
+                        </div>
+
+                        <div class="follow-show-button">
+                            <img src="images/Pfps/amirhoussein_ghiasi_pfp.webp"  alt="Amirhoussein Ghiasi">
+                            <div class="inner-shadow follow-inner-shadow">
+                                <p class="show-title follow-show-title">Amirhoussein Ghiasi</p>
+                                <button class="follow-button">FOLLOW</button>
+                            </div>
+                        </div>
+
+                        <div class="follow-show-button">
+                            <img src="images/Pfps/mohsen_yeganh_pfp.webp"  alt="Mohsen Yeganeh">
+                            <div class="inner-shadow follow-inner-shadow">
+                                <p class="show-title follow-show-title">Mohsen Yeganeh</p>
+                                <button class="follow-button">FOLLOW</button>
+                            </div>
+                        </div>
+
+                        <div class="follow-show-button">
+                            <img src="images/Pfps/behnam_bani_pfp.webp"  alt="Behnam Bani">
+                            <div class="inner-shadow follow-inner-shadow">
+                                <p class="show-title follow-show-title">Behnam Bani</p>
+                                <button class="follow-button">FOLLOW</button>
+                            </div>
+                        </div>
+
+                        <div class="follow-show-button">
+                            <img src="images/Pfps//mehdi_jahani_pfp.webp"  alt="Mehdi Jahani">
+                            <div class="inner-shadow follow-inner-shadow">
+                                <p class="show-title follow-show-title">Mehdi Jahani</p>
+                                <button class="follow-button">FOLLOW</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="all-shows" id="music">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">MUSIC</h2>
+                    <div class="right-left-button-container">
+                        <button class="right-left-button previous-show-list-button">
+                            <i class="fas fa-angle-left right-left-icon"></i>
+                        </button>
+                        <button class="right-left-button next-show-list-button">
+                            <i class="fas fa-angle-right right-left-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="show-page-containers">
+                    <div class="show-page first-set">
+                        <div class="show-button" data-id="1">
+                            <img src="images/Button_images/mehdi_darabi_button.webp"  alt="Mehdi Darabi">
+                            <div class="inner-shadow">
+                                <p class="show-title">Mehdi Darabi</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="2">
+                            <img src="images/Button_images/mohsen_button.webp"  alt="Mohsen Yeganeh">
+                            <div class="inner-shadow">
+                                <p class="show-title">Mohsen Yeganeh</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="3">
+                            <img src="images/Button_images/behnam_button.webp"  alt="Behnam Bani">
+                            <div class="inner-shadow">
+                                <p class="show-title">Behnam Bani</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="4">
+                            <img src="images/Button_images/shadmehr_button.webp"  alt="Shadmehr Aghili">
+                            <div class="inner-shadow">
+                                <p class="show-title">Shadmehr Aghili</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="show-page second-set">
+                        <div class="show-button" data-id="5">
+                            <img src="images/Button_images/mehdi_jahani_button.webp"  alt="Mehdi Jahani">
+                            <div class="inner-shadow">
+                                <p class="show-title">Mehdi Jahani</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="6">
+                            <img src="images/Button_images/ali_yasini_button.webp"  alt="Ali Yasini">
+                            <div class="inner-shadow">
+                                <p class="show-title">Ali Yasini</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="7">
+                            <img src="images/Button_images/moein_button.webp"  alt="Moein">
+                            <div class="inner-shadow">
+                                <p class="show-title">Moein</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="8">
+                            <img src="images/Button_images/mehdi_ahmadvand_button.webp"  alt="Mehdi Ahmadvand">
+                            <div class="inner-shadow">
+                                <p class="show-title">Mehdi Ahmadvand</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buffer"></div>
+                </div>
+            </div>
+
+            <div class="all-shows" id="comedy">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">COMEDY</h2>
+                    <div class="right-left-button-container">
+                        <button class="right-left-button previous-show-list-button">
+                            <i class="fas fa-angle-left right-left-icon"></i>
+                        </button>
+                        <button class="right-left-button next-show-list-button">
+                            <i class="fas fa-angle-right right-left-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="show-page-containers">
+                    <div class="show-page first-set">
+                        <div class="show-button" data-id="9">
+                            <img src="images/Button_images/russell_peters_button.webp"  alt="Russell Peters">
+                            <div class="inner-shadow">
+                                <p class="show-title">Russell Peters</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="10">
+                            <img src="images/Button_images/gabriel_iglesias_button.webp"  alt="Gabriel Iglesias">
+                            <div class="inner-shadow">
+                                <p class="show-title">Gabriel Iglesias</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="11">
+                            <img src="images/Button_images/abotalib_housseini_button.webp"  alt="Abotalib Housseini">
+                            <div class="inner-shadow">
+                                <p class="show-title">Abotalib Housseini</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="12">
+                            <img src="images/Button_images/Jimmy_o_yang_button.jpg.webp"  alt="Jimmy O Yang">
+                            <div class="inner-shadow">
+                                <p class="show-title">Jimmy O Yang</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="show-page second-set">
+                        <div class="show-button" data-id="13">
+                            <img src="images/Button_images/hasan_minhaj_button.webp"  alt="Hasan Minhaj">
+                            <div class="inner-shadow">
+                                <p class="show-title">Hasan Minhaj</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="14">
+                            <img src="images/Button_images/ghiasi_button.webp"  alt="Amirhoussein Ghiasi">
+                            <div class="inner-shadow">
+                                <p class="show-title">Amirhoussein Ghiasi</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="15">
+                            <img src="images/Button_images/ayan_shake_button.webp"  alt="Ayan Shake">
+                            <div class="inner-shadow">
+                                <p class="show-title">Ayan Shake</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="16">
+                            <img src="images/Button_images/boby_lee_button.webp"  alt="Boby Lee">
+                            <div class="inner-shadow">
+                                <p class="show-title">Boby Lee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buffer"></div>
+                </div>
+            </div>
+
+            <div class="all-shows" id="sport">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">SOCCER</h2>
+                    <div class="right-left-button-container">
+                        <button class="right-left-button previous-show-list-button">
+                            <i class="fas fa-angle-left right-left-icon"></i>
+                        </button>
+                        <button class="right-left-button next-show-list-button">
+                            <i class="fas fa-angle-right right-left-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="show-page-containers">
+                    <div class="show-page first-set">
+                        <div class="show-button" data-id="17">
+                            <img src="images/Button_images/psg_arsenal_button.webp"  alt="PSG VS Arsenal">
+                            <div class="inner-shadow">
+                                <p class="show-title">PSG VS Arsenal</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="18">
+                            <img src="images/Button_images/inter_milan_barcelona.webp"  alt="Inter Milan VS FCB">
+                            <div class="inner-shadow">
+                                <p class="show-title">Inter Milan VS FCB</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="19">
+                            <img src="images/Button_images/sepahan_perseplolis_button.webp"  alt="Sepahan VS Persepolis FC">
+                            <div class="inner-shadow">
+                                <p class="show-title">Sepahan VS Persepolis</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="20">
+                            <img src="images/Button_images/mancity_everton_button.webp"  alt="ManCity VS Everton">
+                            <div class="inner-shadow">
+                                <p class="show-title">ManCity VS Everton</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="show-page second-set">
+                        <div class="show-button" data-id="21">
+                            <img src="images/Button_images/real_sociedad_villareal_button.webp"  alt="Real Sociedad VS Villareal">
+                            <div class="inner-shadow">
+                                <p class="show-title">Real Sociedad VS Villareal</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="22">
+                            <img src="images/Button_images/esteghlal_alnassr_button.webp"  alt="Esteghlal VS Al-nassr">
+                            <div class="inner-shadow">
+                                <p class="show-title">Esteghlal VS Al-nassr</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="23">
+                            <img src="images/Button_images/bayern_munich_mainz_button.webp"  alt="Bayern Munich VS Mainz">
+                            <div class="inner-shadow">
+                                <p class="show-title">FCBM VS Mainz</p>
+                            </div>
+                        </div>
+                        <div class="show-button" data-id="24">
+                            <img src="images/Button_images/moreirense_sporting_lisbon_button.webp"  alt="Moreirense VS Sporting Lisbon">
+                            <div class="inner-shadow">
+                                <p class="show-title">Moreirense VS Sporting Lisbon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buffer"></div>
+                </div>
+            </div>
+
+            <!-- <div class="all-events" id="find-an-event">
+                <div class="title-and-basics">
+                    <h2 class="show-headings">FIND AN EVENT</h2>
+                </div>
+
+                <div class="all-events-containers">
+                    <div class="events-page">
+                        <div class="find-event-button">
+                            <div class="icon-text">
+                            <i class="fa-solid fa-calendar find-event-button-icon"></i>
+                            <p>Date</p>
+                            </div>
+                            <i class="fas fa-angle-up right-left-icon"></i>
+                        </div>
+
+                        <select class="find-event-button">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+
+                        <div class="find-event-button">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-location-dot find-event-button-icon"></i>
+                                <p>Venue</p>
+                            </div>
+                            <i class="fas fa-angle-up right-left-icon"></i>
+                        </div>
+
+                        <div class="find-event-button">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-wallet find-event-button-icon"></i>
+                                <p>Cost</p>
+                            </div>
+                            <i class="fas fa-angle-up right-left-icon"></i>
+                        </div>
+
+                        <div class="find-event-button">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-palette find-event-button-icon"></i>
+                                <p>Genre</p>
+                            </div>
+                            <i class="fas fa-angle-up right-left-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="found-event-container">
+                        <p class="number-of-events-found">0 EVENTS FOUND</p>
+                        <div class="found-event-row">
+                            <div class="show-button show-button-event">
+                                <img src="images/Button_images/psg_arsenal_button.webp"  alt="PSG VS Arsenal">
+                                <div class="inner-shadow">
+                                    <p class="show-title found-event-show-title">PSG VS Arsenal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="footer">
+            <div class="footer-content"></div>
+        </section>
+    </section>
+
+    <!-- Scripts -->
+    <script src="navBar.js"></script> 
+    <script src="showsSlider.js"></script>
+    <script src="genreButtons.js"></script>
+    <script src="goToShowPage.js"></script>
+    <script src="loader.js"></script>
+        
+</body>
+</html>

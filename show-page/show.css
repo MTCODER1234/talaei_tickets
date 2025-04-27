@@ -1,0 +1,443 @@
+* {
+    font-family: "Alexandria", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.content {
+    display: none;
+}
+
+.load-content {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #003149;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1020;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 10vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsOut 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 1rem #00a7fbb4);
+  }
+  .loader:before {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: inset 0 0 0 1rem #00A6FB;
+    animation-name: pulsIn;
+  }
+  .loader:after {
+    width: calc(100% - 2rem);
+    padding-bottom: calc(100% - 2rem);
+    box-shadow: 0 0 0 0 #00A6FB;
+  }
+
+  @keyframes pulsIn {
+    0% {
+      box-shadow: inset 0 0 0 1rem #00A6FB;
+      opacity: 1;
+    }
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 #00A6FB;
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulsOut {
+    0%, 50% {
+      box-shadow: 0 0 0 0 #00A6FB;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 1rem #00A6FB;
+      opacity: 1;
+    }
+  }
+      
+.loader.invisible {
+    display: none;
+    opacity: 0;
+}
+
+.load-text {
+    font-size: 2vw;
+    font-weight: 100;
+    color: white;
+}
+
+.dots::after {
+    content: "";
+    animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+    0%   { content: ""; }
+    20%  { content: "."; }
+    40%  { content: ".."; }
+    60%  { content: "..."; }
+    80% { content: ".."; }
+    100% { content: "."; }
+}
+
+/* Nav Bar */
+.navigation-bar-parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 3vw;
+    z-index: 5;
+}
+
+.navigation-bar-child {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color:hsla(201, 100%, 16%, 0.7);
+    box-shadow: -1vw 0.5vw 1vw #0000008c;
+    height: 3vw;
+    display: flex;
+}
+
+.Talaei-Tickets-Logo {
+    position: absolute;
+    left: 2vw;
+}
+
+.Talaei-Tickets-Logo p {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 6px 8px #000000e2;
+    color: hsla(200, 100%, 49%, 0.635);
+    font-size: 1.5vw;
+    text-align: center;
+    right: 12vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;  
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    position: absolute;
+    right: 2vw;
+    gap: 1.5vw;
+}
+
+.user-icon {
+    font-size: 2vw;
+    color: #00a7fbd6;
+    transition: color 0.6s ease-in-out;
+}
+
+.user-icon:hover {
+    color: #006da4e5;
+    cursor: pointer;
+}
+
+.notification-icon {
+    font-size:1.6vw;
+    color: #00a7fbd6;
+    transition: color 0.6s ease-in-out;
+}
+
+.notification-icon:hover {
+    color: #006da4e5;
+    cursor: pointer;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4vw;
+    right: -0.7vw;
+    padding: 0.1vw 0.4vw;
+    border-radius: 50%;
+    background: #ec0000dd;
+    color: white;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size:0.9vw;
+}
+
+/* background-img */
+#main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: min(49.2vw, 100vh);
+}
+
+#background-img-div {
+    width: 100%;
+    height: 49.2vw;
+}
+
+#background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.gradient {
+    width: 100%;
+    height: 49.2vw;
+    background: radial-gradient(at right top, #ffffff00, #010101);
+    position: absolute;
+}
+
+/* Main Components */
+
+#components {
+    height: auto;
+    width: 90vw;
+    position: absolute;
+    z-index: 4;
+    left: 5vw;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title-of-show {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 50;
+    font-size: 3.3vw;
+    color: white;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: -0.4vw 0.4vw 0.4vw #000000;
+    text-transform: uppercase;
+}
+
+#buttons {
+    gap: 1.5vw;
+    display: flex;
+    position: relative;
+    margin-top: 2vw;
+}
+
+.buy-likes-button {
+    background-color: hsla(202, 97%, 15%, 0.9);
+    border: none;
+    height: 3vw;
+    width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 1.5vw;
+    font-weight: 250;
+    font-size: 1.5vw;
+    color: #00A6FB;
+    text-align: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    box-shadow: -0.2vw 0.2vw 1vw #000000a2;
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.buy-likes-button:hover {
+    background-color: hsl(200, 100%, 49%, 0.9);
+    color: hsla(202, 97%, 15%);
+    cursor: pointer;
+}
+
+#follow-button {
+    background-color: hsla(123, 97%, 15%, 0.9);
+    color: hsla(130, 100%, 49%, 0.9);
+}
+
+#follow-button:hover {
+    background-color: hsla(130, 100%, 49%, 0.9);
+    color: hsla(123, 97%, 15%, 0.9);
+}
+
+#likes-button {
+    background-color: hsla(313, 97%, 15%, 0.9);
+}
+
+#likes-button:hover {
+    background-color: hsl(310, 100%, 49%, 0.9);
+    color: #4b013b;
+}
+
+#likes-button:hover #likes-text,
+#likes-button:hover .likes-icon {
+    color: #4b013b;
+}
+
+#likes-text {
+    font-weight: 250;
+    font-size: 1.2vw;
+    color: #fb00d1;
+    text-align: center;
+    transition: color 0.6s ease-in-out;
+}
+
+.likes-icon {
+    font-size: 1.4vw;
+    color: #fb00d1;
+    text-align: center;
+}
+
+#spots-left {
+    margin-top: 1vw;
+    color: #ff5252;
+    text-shadow: -0.4vw 0.4vw 0.4vw #000000;
+    font-weight: 150;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.info-event-text-div {
+    margin-top: 2vw;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: 1vw;
+    display: flex;
+}
+
+.event-box-icons {
+    color: #00a7fbd3;
+    font-size: 2.2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.info-event-text-title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 150;
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.text-icon {
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1vw;
+}
+
+.info-event-text {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 150;
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.event-box-div {
+    width: 90vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    column-gap: 10vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.event-box {
+    background-color: hsla(199, 100%, 29%, 0.15);
+    width: 22vw;
+    height: 4.5vw;
+    border: 0.2vw solid hsl(200, 100%, 38%, 0.5);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    backdrop-filter: blur(0.4vw);
+    -webkit-backdrop-filter: blur(0.5vw);
+}
+
+#live-in-concert {
+    font-size: 1.5vw;
+    font-weight: 250;
+}
+
+b {
+    font-weight: 300;
+}
+
+#artist-title {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1vw;
+    
+}
+
+#artist-logo-div {
+    align-self: center;
+    width: 22vw;
+    height: 11vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#artist-logo {
+    align-self: center;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(-0.2vw 0.2vw 0.3vw rgba(0, 0, 0, 0.801));
+}

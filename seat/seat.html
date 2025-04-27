@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seat.css">
+    <title>Talaei Tickets</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="content">
+        <section class="navigation-bar-parent">
+            <div class="navigation-bar-child">
+
+                <button class="previous-page-button">
+                    <i class="fas fa-angle-left back-icon"></i>
+                    BACK
+                </button>
+                
+                <div class="Talaei-Tickets-Logo">
+                    <p>TALAEI TICKETS</p>
+                </div>
+
+                <div class="user">
+                    <div class="notification">
+                        <i class="fas fa-bell notification-icon"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <i class='fas fa-user-circle user-icon'></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="main">
+            <div id="components">
+                <div id="artist-title">
+                    <div id="artist-logo-div">
+                        <img alt="logo" id="artist-logo">
+                    </div>
+                    <h1 id="title-of-show"></h1>
+                </div> 
+
+                <div id="pricing">
+                    <div class="sec-price" id="sec1-price">
+                        <p class="sec-price-text-heading">SECTION 1</p>
+                        <div class="buttons-minus-plus-div">
+                            <button class="minus-plus-button minus-button-1">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <div class="number-of-tickets-text-div">
+                                <p class="number-of-tickets-text number-1">1</p>
+                            </div>
+                            <button class="minus-plus-button plus-button-1">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="buy-button">
+                            <i class="fa-solid fa-ticket ticket-icon" style="transform: rotate(120deg);"></i>
+                            <p class="buy-button-text buy-button-text-1">$100</p>
+                        </button>
+                    </div>
+
+                    <div class="sec-price" id="sec2-price">
+                        <p class="sec-price-text-heading">SECTION 2</p>
+                        <div class="buttons-minus-plus-div">
+                            <button class="minus-plus-button minus-button-2">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <div class="number-of-tickets-text-div">
+                                <p class="number-of-tickets-text number-2">1</p>
+                            </div>
+                            <button class="minus-plus-button plus-button-2">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="buy-button">
+                            <i class="fa-solid fa-ticket ticket-icon" style="transform: rotate(120deg);"></i>
+                            <p class="buy-button-text buy-button-text-2">$150</p>
+                        </button>
+                    </div>
+
+                    <div class="sec-price" id="sec3-price">
+                        <p class="sec-price-text-heading">SECTION 3</p>
+                        <div class="buttons-minus-plus-div">
+                            <button class="minus-plus-button minus-button-3">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <div class="number-of-tickets-text-div">
+                                <p class="number-of-tickets-text number-3">1</p>
+                            </div>
+                            <button class="minus-plus-button plus-button-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="buy-button">
+                            <i class="fa-solid fa-ticket ticket-icon" style="transform: rotate(120deg);"></i>
+                            <p class="buy-button-text buy-button-text-3">$250</p>
+                        </button>
+                    </div>
+
+                    <div class="sec-price" id="sec4-price">
+                        <p class="sec-price-text-heading">VIP</p>
+                        <div class="buttons-minus-plus-div">
+                            <button class="minus-plus-button minus-button-4">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <div class="number-of-tickets-text-div">
+                                <p class="number-of-tickets-text number-4">1</p>
+                            </div>
+                            <button class="minus-plus-button plus-button-4">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="buy-button">
+                            <i class="fa-solid fa-ticket ticket-icon" style="transform: rotate(120deg);"></i>
+                            <p class="buy-button-text buy-button-text-4">$400</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="background-img-div">
+                <div class="gradient"></div>
+                <img id="background-img" alt="background-img">
+            </div>
+
+            <div class="venue-illustration">
+                <div class="outline"></div>
+                <div class="section1">
+                    <p>SECTION 1</p>
+                </div>
+                <div class="section2">
+                    <p>SECTION 2</p>
+                </div>
+                <div class="section3">
+                    <p>SECTION 3</p>
+                </div>
+                <div class="vip">
+                    <p>VIP</p>
+                </div>
+                <div class="stage">
+                    <p>STAGE</p>
+                </div>
+            </div>
+
+            <p id="warning-text"><i class="fa-solid fa-circle-info"></i> A MAXIUMUM OF 5 TICKETS MAY BE BOUGHT PER EVENT, TO PREVENT ANY SUSPICIOUS ACTIVITY.</p>
+        </section>
+    </section>
+    
+
+    <script src="ticketNumber.js"></script>
+    <script src="hover.js"></script>
+    <script src="back.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

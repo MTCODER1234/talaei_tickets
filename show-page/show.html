@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talaei Tickets</title>
+
+    <link rel="stylesheet" href="show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="load-content">
+        <div class="loader"></div>
+        <h2 class="load-text">LOADING<span class="dots"></span></h2>
+    </section>
+
+    <section class="content">
+        <section class="navigation-bar-parent">
+            <div class="navigation-bar-child">
+
+                <div class="Talaei-Tickets-Logo">
+                    <p>TALAEI TICKETS</p>
+                </div>
+
+                <div class="user">
+                    <div class="notification">
+                        <i class="fas fa-bell notification-icon"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <i class='fas fa-user-circle user-icon'></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="main">
+            <div id="components">
+                <div id="artist-title">
+                    <div id="artist-logo-div">
+                        <img src="" alt="logo" id="artist-logo">
+                    </div>
+                    <h1 id="title-of-show"></h1>
+                </div> 
+                <div id="buttons">
+                    <button class="buy-likes-button" id="buy-button">
+                        <i class="fa-solid fa-ticket" style="transform: rotate(120deg);"></i>
+                        Buy
+                    </button>
+                    <button class="buy-likes-button" id="follow-button">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <p id="follow-text">Follow</p>
+                    </button>
+                    <button class="buy-likes-button" id="likes-button">
+                        <span class="far fa-heart likes-icon not-liked-icon"></span>
+                        <p id="likes-text"></p>
+                    </button>
+                </div>
+                <p id="spots-left"></p>
+                <div class="info-event-text-div">
+                    <p class="info-event-text-title" id="live-in-concert"></p>      
+                </div>
+                <div class="event-box-div">
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-icons event-box-icons"></i>
+                            <p class="info-event-text" id="info-event-text-category"></p>
+                        </div>
+                    </div>
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-calendar-days event-box-icons"></i>
+                            <p class="info-event-text" id="info-event-text-date"></p>
+                        </div>
+                    </div>
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-earth-americas event-box-icons"></i>
+                            <p class="info-event-text" id="info-event-text-city"></p>
+                        </div>
+                    </div>
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-landmark event-box-icons"></i>
+                            <p class="info-event-text" id="info-event-text-venue"></p>
+                        </div>
+                    </div>
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-clock event-box-icons"></i>
+                            <p class="info-event-text" id="info-event-text-time"></p>
+                        </div>
+                    </div>
+                    <div class="event-box">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-ticket-simple event-box-icons"></i>
+                            <p class="info-event-text">general, deluxe, VIP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="background-img-div">
+                <div class="gradient"></div>
+                <img id="background-img" alt="background-img">
+            </div>
+        </section>
+
+        <section id="recommended">
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="likeButton.js"></script>
+    <script src="loader.js"></script>
+    <script src="buy.js"></script>
+    <script src="back.js"></script>
+</body>
+</html>
