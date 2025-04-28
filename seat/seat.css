@@ -11,8 +11,7 @@ html, body {
 }
 
 .content {
-    /* judnwed */
-    display: block;
+    display: none;
 }
 
 .load-content {
@@ -472,7 +471,7 @@ b {
 }
 
 .vip p {
-    color: #00A6FB;
+    color: #006699;
     font-size: 1.5vw;
     font-weight: 500;
     margin-top: 2.4vw;
@@ -611,10 +610,11 @@ b {
 #warning-text {
     position: absolute;
     color: rgb(255, 68, 68);
-    width: 30vw;
-    font-weight: 300;
+    width: 28vw;
+    font-weight: 200;
     text-shadow: 0px 6px 4px #000000;
     margin-top: 40vw;
-    margin-left: 54vw;
+    margin-left: 52vw;
     z-index: 3;
+    font-size: 1vw;
 }

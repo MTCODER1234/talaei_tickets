@@ -1,0 +1,422 @@
+* {
+    font-family: "Alexandria", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(45deg, #000000, #005E96);
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: block;
+}
+
+/* Nav Bar */
+.navigation-bar-parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 3vw;
+    z-index: 10;
+}
+
+.navigation-bar-child {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color:hsla(201, 100%, 16%, 0.7);
+    box-shadow: 0vw 0.5vw 1vw #0000008c;
+    height: 3vw;
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1.5vw;
+}
+
+.Talaei-Tickets-Logo p {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 6px 8px #000000e2;
+    color: hsla(200, 100%, 49%, 0.635);
+    font-size: 1.5vw;
+    text-align: center;
+    right: 12vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;  
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    
+    right: 2vw;
+    gap: 1.5vw;
+}
+
+.user-icon {
+    font-size: 2vw;
+    color: #38bdffd6;
+    transition: color 0.6s ease-in-out;
+}
+
+.user-icon:hover {
+    color: #068dd1e5;
+    cursor: pointer;
+}
+
+.notification-icon {
+    font-size:1.6vw;
+    color: #38bdffd6;
+    transition: color 0.6s ease-in-out;
+}
+
+.notification-icon:hover {
+    color: #068dd1e5;
+    cursor: pointer;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -0.4vw;
+    right: -0.7vw;
+    padding: 0.1vw 0.4vw;
+    border-radius: 50%;
+    background: #ec0000dd;
+    color: white;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size:0.9vw;
+}
+
+.previous-page-button {
+    height: 2vw;
+    width: auto;
+    border-radius: 1vw;
+    border: none;
+    background-color: transparent;
+    padding: 0vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    font-size: 1vw;
+    color: #00A6FB;
+    text-shadow: 0px 6px 8px #000000e2;
+    font-weight: 250;
+}
+
+.previous-page-button:hover {
+    background-color: hsla(201, 100%, 16%, 0.9);
+    box-shadow: 0vw 0vw 0.5vw #00000089;
+    cursor: pointer;
+}
+
+.back-icon {
+    font-size: 1vw;
+    color: #00A6FB;
+    margin: 0vw;
+    transition: color 0.6s ease-in-out;
+}
+
+.previous-page-button p {
+    font-size: 1vw;
+    color: #00A6FB;
+}
+
+/* Main */
+#main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: min(49.2vw, 100vh);
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#main-text {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+#talaei-tickets-title-main {
+    font-size: 5vw;
+    color: #00A6FB;
+    font-weight: 400;
+    text-shadow: 0px 6px 8px #000000e2;
+    padding: 0;
+    margin: 0;
+}
+
+#show-title-main {
+    font-size: 2vw;
+    color: #ffffff;
+    font-weight: 50;
+    text-shadow: 0px 6px 8px #000000e2;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+#summary-purchase-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.summary-purchase-div {
+    height: 25.5vw;
+    width: 29.5vw;
+    background-color: #0048722c;
+    border-radius: 2vw;
+    box-shadow: -0.2vw 0.2vw 2vw #000000bb;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5vw;
+    flex-direction: column;
+}
+
+.heading-summary-purchase {
+    font-size: 2.3vw;
+    color: #ffffff;
+    font-weight: 200;
+    text-align: left;
+}
+
+.items-purchased {
+    height: 17vw;
+    width: 29vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #007ab8 transparent;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    width: 28vw;
+}
+
+.text-purchase-container {
+    font-size: 1.7vw;
+    color: #ffffff;
+    font-weight: 100;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.type-ticket {
+    height: 1.7vw;
+    width: 1.7vw;
+    background: linear-gradient(
+    90deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100vw;
+    box-shadow: 0vw 0vw 0.5vw #000000bb;
+}
+
+.label-and-type-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.type-ticket-icon {
+    font-size: 1vw;
+    color: #005a8e;
+}
+
+.label-tickets-purchase-container {
+    font-size: 1.7vw;
+    text-transform: capitalize;
+}
+
+.price-of-tickets-purchase-container {
+    font-weight: 300;
+}
+
+.number-of-tickets-purchase-container {
+    font-weight: 200;
+}
+
+.text-amount-div {
+    display: flex;
+    gap: 1.1vw;
+}
+
+.buy-div {
+    display: flex;
+    justify-content: space-between;
+    width: 29vw;
+    margin-top: 1.5vw;
+}
+
+.text-buy-div {
+    font-size: 1.7vw;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #00a2ff;
+}
+
+#payment-heading {
+    align-self: center;
+}
+
+.online-methods-container {
+    width: 29vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 3vw;
+}
+
+.online-method-button {
+    height: 4vw;
+    width: 7vw;
+    background-color: white;
+    border-radius: 0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0vw 0vw 1vw #000000bb;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.online-method-button:focus {
+    background-color: #0081cc;
+}
+
+.online-method-button:focus .payment-icons {
+    color: white;
+}
+
+#submit-button {
+    height: 3vw;
+    width: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: #003858;
+    border-radius: 0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0vw 0vw 1vw #000000bb;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #00A6FB;
+    font-size: 1.4vw;
+    font-weight: 350;
+    align-self: center;
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+    margin-top: 4vw;
+}
+
+#submit-button:hover {
+    background-color: #00A6FB;
+    color: #003858;
+}
+
+.payment-icons {
+    font-size: 3.5vw;
+    color: #005a8e;
+    transition: color 0.6s ease-in-out;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+.heading-email {
+    font-size: 1.5vw;
+    color:white;
+    font-weight: 200;
+}
+
+.email-input-div {
+    display: flex;
+    align-items: center;
+    width: 29vw;
+    height: 3vw;
+    gap: 1vw;
+    
+    background-color: white;
+    border-radius: 0.5vw;
+    box-shadow: 0vw 0vw 1vw #000000bb;
+    justify-content: flex-start;
+}
+
+.email-input {
+    border: none;
+    outline: none;
+    border-color: transparent;
+    color: #005a8e;
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 23vw;
+}
+
+.email-icon {
+    font-size: 2vw;
+    color: #005a8e;
+    margin-left: 1vw;
+}
