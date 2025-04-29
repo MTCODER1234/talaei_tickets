@@ -1,30 +1,53 @@
-document.getElementById("submit-button").addEventListener("click", function() {
-    console.log("clicked")
-    const nodemailer = require('nodemailer');
+emailjs.init('AC9OKzizIt2mpN0ZE'); 
 
-    const transporter = nodemailer.createTransport({
-    host: 'live.smtp.mailtrap.io',
-    port: 587,
-    secure: false,
-    auth: {
-        user: '461b119734dd12',
-        pass: 'b00052bbaab507',
-    }
+function sendEmail() {
+    const button = document.getElementById("submit-button");
+
+    button.addEventListener("click", async function () {
+        const eventId = parseInt(localStorage.getItem('id'));
+        const valueEmail = document.getElementById("email-input-value").value;
+
+        button.disabled = true;
+
+        console.log("Clicked!");
+        console.log("Waiting 10 seconds before sending email...");
+        
+        const res1 = await fetch('/events.json');
+        const eventsData = await res1.json();
+
+        const res2 = await fetch('/user.json');
+        const userdata = await res2.json();
+
+        const event = eventsData.events.find(e => e.id === eventId);
+        const email = userdata.user[0].email;
+
+        if (valueEmail === email) {
+            setTimeout(() => {
+                button.disabled = true
+                emailjs.send('service_spebbad', 'template_hd7kmyr', {
+                    "email": valueEmail,
+                    "show-name": event.artist,
+                    "time": event.time,
+                    "date": event.date,
+                    "city": event.city,
+                    "venue": event.venue
+                })
+                .then(function (response) {
+                    console.log('Success!', response);
+                    button.disabled = false;
+                })
+                .catch(function (error) {
+                    console.log('Failed...', error);
+                    button.disabled = false;
+                });
+            }, 10000);
+            
+        } else {
+            console.log("Email does not match stored email. Not sending.");
+            button.disabled = false;
+        }
     });
+    
+}
 
-    const mailOptions = {
-    from: 'TalaeiTickets@gmail.com',
-    to: 't385475@gmail.com',
-    subject: 'Sending Email using Node.js',
-    text: 'That was easy!'
-    };
-
-    transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-        console.log('Error:', error);
-    } else {
-        console.log('Email sent:', info.response);
-    }
-    });
-
-});
+sendEmail();

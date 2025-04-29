@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="purchase.css">
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,7 +161,7 @@
                         <p class="heading-email">Please Enter Your Email</p>
                         <div class="email-input-div">
                             <i class="fa-solid fa-envelope email-icon"></i>
-                            <input class="email-input" placeholder="example@gmail.com">
+                            <input class="email-input" id="email-input-value" placeholder="example@gmail.com">
                         </div>
                     </div>
 
@@ -183,7 +184,7 @@
     </section>
 
     <script src="back.js"></script>
-    <script src="sendEmail.js"></script>
+    <script src="sendEmail.js" defer></script>
 
 </body>
 </html>
