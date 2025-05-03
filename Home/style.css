@@ -132,23 +132,79 @@ body {
     z-index: 2;
     top: 4.5vw;
     position: absolute;
+    margin-top: 4vw;
 }
 
 /* <-------- Search Box --------> */
 
-.search-box {
+.search-content-all {
+    position: absolute;
     top: 15vw;
+    display: flex;
+    align-self: center;
+    width: 22vw;
+    height: auto;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.options-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box {
     border-radius: 0.9vw;
     padding: 1vw;
     width: 20vw;
     height: 0.5vw;
     background: rgba(255, 255, 255, 0.089);
-    position: absolute;
     z-index: 2;
     display: flex;
     align-items: center;
     box-shadow: 0vw 4px 10px #000000c6;
     gap: 0.8vw;
+}
+
+.options {
+    height: 1.5vw;
+    z-index: 4;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-image-search-box-overlay {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: -1.5vw;
+ }
+
+.search-box-overlay {
+    background-color: #0000009f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.options:hover .search-box-overlay {
+    background-color: #0000003f;
+}
+
+
+.options-text {
+    z-index: 1;
+    font-size: 1.4vw;
+    font-weight: 100;
+    color: white;
+    font-family: "Alexandria", sans-serif;
+    text-shadow: 0px 2px 2px #000000;
 }
 
 .search-box input {
@@ -211,7 +267,7 @@ body {
     top: 19.5vw;
     
     gap: 2vw;
-    z-index: 3;
+    z-index: 1;
 
     align-items: center; /* Note to self: align-items is verticaly centered */
     justify-content: center; /* Note to self: justify-content is horizontaly centered */
@@ -410,14 +466,22 @@ body {
 
 .search-box-button {
     border-radius: 0.9vw;
-    width: 9.5vw;
+    width: 8vw;
     height: 2vw;
     background: #003c5c78;
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 1vw;
     gap: 0.4vw;
+    transition: width 0.6s ease-in-out;
+    background-color: #00253b9f;
+}
+
+.nav-options {
+    display: flex;
+    width: 15vw;
 }
 
 .search-box-button input {

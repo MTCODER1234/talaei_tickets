@@ -4,4 +4,4 @@ function purchasePage(buyButton) {
     });
 }
 
-purchasePage(document.querySelector(".buy-button"));
+purchasePage(document.querySelector(".buy-button-total"));

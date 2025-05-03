@@ -5,6 +5,7 @@
         "artist": "Mehdi Darabi",
         "titleImage": "/image/Logos/mehdi_darabi_logo.png",
         "backgroundImage": "/image/background_img/mehdi_darabi_background.jpg",
+        "SearchImage": "/image/search-img/mehdi_darabi_background.webp",
         "category": "Music",
         "date": "2nd of May, 2025",
         "city": "Canberra",
@@ -13,13 +14,16 @@
         "spotsLeft": "32",
         "likes": "15.2k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 2,
         "artist": "Mohsen Yeganeh",
         "titleImage": "/image/Logos/mohsen_yeganeh_logo.png",
         "backgroundImage": "/image/background_img/Mohsen-yeganeh-sari.jpg",
+        "SearchImage": "/image/search-img/Mohsen-yeganeh-sari.webp",
         "category": "Music",
         "date": "21st of June, 2025",
         "city": "Sydney",
@@ -28,13 +32,16 @@
         "spotsLeft": "8",
         "likes": "31.9k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 3,
         "artist": "Behnam Bani",
         "titleImage": "/image/Logos/behnam_bani_logo.png",
         "backgroundImage": "/image/background_img/behnam_bani_background.jpg",
+        "SearchImage": "/image/search-img/behnam_bani_background.webp",
         "category": "Music",
         "date": "16th of May, 2025",
         "city": "Melbourne",
@@ -43,13 +50,16 @@
         "spotsLeft": "18",
         "likes": "14.1k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 4,
         "artist": "Shadmehr Aghili",
         "titleImage": "/image/Logos/shadmehr_aghili_logo.png",
         "backgroundImage": "/image/background_img/shadmehr_aghili_background.jpg",
+        "SearchImage": "/image/search-img/shadmehr_aghili_background.webp",
         "category": "Music",
         "date": "5th of July, 2025",
         "city": "Perth",
@@ -58,13 +68,16 @@
         "spotsLeft": "24",
         "likes": "17.6k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 5,
         "artist": "Mehdi Jahani",
         "titleImage": "/image/Logos/mehdi_jahani_logo.png",
         "backgroundImage": "/image/background_img/mehdi_jahani_background.jpg",
+        "SearchImage": "/image/search-img/mehdi_jahani_background.webp",
         "category": "Music",
         "date": "30th of May, 2025",
         "city": "Sydney",
@@ -73,13 +86,16 @@
         "spotsLeft": "29",
         "likes": "16.1k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 6,
         "artist": "Ali Yasini",
         "titleImage": "/image/Logos/ali_yasini_logo.png",
         "backgroundImage": "/image/background_img/ali_yasini_background.jpg",
+        "SearchImage": "/image/search-img/ali_yasini_background.webp",
         "category": "Music",
         "date": "11th of September, 2025",
         "city": "Darwin",
@@ -88,13 +104,16 @@
         "spotsLeft": "9",
         "likes": "9.7k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 7,
         "artist": "Moein",
         "titleImage": "/image/Logos/moein_logo.png",
         "backgroundImage": "/image/background_img/moein_background.jpg",
+        "SearchImage": "/image/search-img/moein_background.webp",
         "category": "Music",
         "date": "25th of May, 2025",
         "city": "Adelaide",
@@ -103,13 +122,16 @@
         "spotsLeft": "11",
         "likes": "18.1k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 8,
         "artist": "Mehdi Ahmadvand",
         "titleImage": "/image/Logos/mehdi_ahmadvand_logo.png",
         "backgroundImage": "/image/background_img/mehdi_ahmadvand_background.jpg",
+        "SearchImage": "/image/search-img/mehdi_ahmadvand_background.webp",
         "category": "Music",
         "date": "26th of July, 2025",
         "city": "Sydney",
@@ -118,13 +140,16 @@
         "spotsLeft": "9",
         "likes": "32.3k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 9,
         "artist": "Russell Peters",
         "titleImage": "/image/Logos/russell_peters_logo.png",
         "backgroundImage": "/image/background_img/russell_peters_background.jpg",
+        "SearchImage": "/image/search-img/russell_peters_background.webp",
         "category": "Comedy",
         "date": "31st of May, 2025",
         "city": "Gold Coast",
@@ -133,13 +158,16 @@
         "spotsLeft": "18",
         "likes": "9.4k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 10,
         "artist": "Gabriel Iglesias",
         "titleImage": "/image/Logos/gabriel_iglesias_logo.webp",
         "backgroundImage": "/image/background_img/gabriel iglesias.jpg",
+        "SearchImage": "/image/search-img/gabriel iglesias.webp",
         "category": "Comedy",
         "date": "1st of May, 2025",
         "city": "Cairns",
@@ -148,13 +176,16 @@
         "spotsLeft": "26",
         "likes": "7.8k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 11,
         "artist": "Abotalib Housseini",
         "titleImage": "/image/Logos/abotalib_logo.png",
         "backgroundImage": "/image/background_img/abotalib_housseini_background.jpg",
+        "SearchImage": "/image/search-img/abotalib_housseini_background.webp",
         "category": "Comedy",
         "date": "13th of June, 2025",
         "city": "Sydney",
@@ -163,13 +194,16 @@
         "spotsLeft": "11",
         "likes": "27.1k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 12,
         "artist": "Jimmy O Yang",
         "titleImage": "/image/Logos/jimmy_yang_logo.png",
         "backgroundImage": "/image/background_img/jimmy_o_yang_background.jpg",
+        "SearchImage": "/image/search-img/jimmy_o_yang_background.webp",
         "category": "Comedy",
         "date": "15th of August, 2025",
         "city": "Hobart",
@@ -178,13 +212,16 @@
         "spotsLeft": "19",
         "likes": "11.7k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 13,
         "artist": "Hasan Minhaj",
         "titleImage": "/image/Logos/hasan_minhaj_logo.png",
         "backgroundImage": "/image/background_img/hasan_minhaj_background.jpg",
+        "SearchImage": "/image/search-img/hasan_minhaj_background.webp",
         "category": "Comedy",
         "date": "28th of May, 2025",
         "city": "Newcastle",
@@ -193,13 +230,16 @@
         "spotsLeft": "32",
         "likes": "13.4k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 14,
         "artist": "Amirhoussein Ghiasi",
         "titleImage": "/image/Logos/ghiasi_logo.png",
         "backgroundImage": "/image/background_img/amirhoussin_ghiasi_background.jpg",
+        "SearchImage": "/image/search-img/amirhoussin_ghiasi_background.webp",
         "category": "Comedy",
         "date": "14th of June, 2025",
         "city": "Sydney",
@@ -208,13 +248,16 @@
         "spotsLeft": "6",
         "likes": "34.2k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 15,
         "artist": "Ayan Shake",
         "titleImage": "/image/Logos/ayan_logo.png",
         "backgroundImage": "/image/background_img/ayan_background.jpg",
+        "SearchImage": "/image/search-img/ayan_background.webp",
         "category": "Comedy",
         "date": "26th of July, 2025",
         "city": "Brisbane",
@@ -223,13 +266,16 @@
         "spotsLeft": "7",
         "likes": "30.9k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 16,
         "artist": "Boby Lee",
         "titleImage": "/image/Logos/boby_logo.png",
         "backgroundImage": "/image/background_img/boby_lee_background.jpg",
+        "SearchImage": "/image/search-img/boby_lee_background.webp",
         "category": "Comedy",
         "date": "5th of December, 2025",
         "city": "Dubbo",
@@ -238,13 +284,16 @@
         "spotsLeft": "26",
         "likes": "5.7k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 17,
         "artist": "Arsenal VS PSG",
         "titleImage": "/image/Logos/champions_league_logo.png",
         "backgroundImage": "/image/background_img/arsenal_psg_background.jpg",
+        "SearchImage": "/image/search-img/arsenal_psg_background.webp",
         "category": "Sport",
         "date": "8th of May, 2025",
         "city": "Paris",
@@ -253,13 +302,16 @@
         "spotsLeft": "18",
         "likes": "17.7k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 18,
         "artist": "Inter Milan VS FC Barcelona",
         "titleImage": "/image/Logos/champions_league_logo.png",
         "backgroundImage": "/image/background_img/inter_barca_background.jpg",
+        "SearchImage": "/image/search-img/inter_barca_background.webp",
         "category": "Sport",
         "date": "7th of May, 2025",
         "city": "Milan",
@@ -268,13 +320,16 @@
         "spotsLeft": "13",
         "likes": "19.3k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 19,
         "artist": "Sepahan VS Persepolis FC",
         "titleImage": "/image/Logos/pgpl_logo.png",
         "backgroundImage": "/image/background_img/sepahan_persepolis_background.jpg",
+        "SearchImage": "/image/search-img/sepahan_persepolis_background.webp",
         "category": "Sport",
         "date": "2nd of May, 2025",
         "city": "Isfahan",
@@ -283,13 +338,16 @@
         "spotsLeft": "7",
         "likes": "22.5k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 20,
         "artist": "Man City VS Everton",
         "titleImage": "/image/Logos/premier_league_logo.png",
         "backgroundImage": "/image/background_img/mancity_everton_background.jpg",
+        "SearchImage": "/image/search-img/mancity_everton_background.webp",
         "category": "Sport",
         "date": "26th of May, 2025",
         "city": "Manchester",
@@ -298,13 +356,16 @@
         "spotsLeft": "17",
         "likes": "12.8k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 21,
         "artist": "Real Sociedad Vs Villareal",
         "titleImage": "/image/Logos/laliga_logo.png",
         "backgroundImage": "/image/background_img/soceidad_villareal_background.jpg",
+        "SearchImage": "/image/search-img/soceidad_villareal_background.webp",
         "category": "Sport",
         "date": "5th of May, 2025",
         "city": "San Sebastián",
@@ -313,13 +374,16 @@
         "spotsLeft": "37",
         "likes": "7.8k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 22,
         "artist": "Esteghlal FC VS Al-Nassr",
         "titleImage": "/image/Logos/acl_logo.png",
         "backgroundImage": "/image/background_img/esteghlal_alnassr_background.jpg",
+        "SearchImage": "/image/search-img/esteghlal_alnassr_background.webp",
         "category": "Sport",
         "date": "30th of May, 2025",
         "city": "Tehran",
@@ -328,13 +392,16 @@
         "spotsLeft": "7",
         "likes": "27.3k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 23,
         "artist": "FC Bayern Munich VS Mainz",
         "titleImage": "/image/Logos/bundesliga.png",
         "backgroundImage": "/image/background_img/bayern_munich_mainz_background.jpg",
+        "SearchImage": "/image/search-img/bayern_munich_mainz_background.webp",
         "category": "Sport",
         "date": "1th of June, 2025",
         "city": "Munich",
@@ -343,13 +410,16 @@
         "spotsLeft": "17",
         "likes": "31.1k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       },
       {
         "id": 24,
         "artist": "Moreirense VS Sporting Lisbon",
         "titleImage": "/image/Logos/lp_logo.png",
         "backgroundImage": "/image/background_img/sporting_background.jpg",
+        "SearchImage": "/image/search-img/sporting_background.webp",
         "category": "Sport",
         "date": "12th of June, 2025",
         "city": "Moreira",
@@ -358,7 +428,9 @@
         "spotsLeft": "17",
         "likes": "4.4k",
         "ticketsBought": "0",
-        "limit": false
+        "limit": false,
+        "liked": false,
+        "amountPurchased": 0
       }
     ]
   }

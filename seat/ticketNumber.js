@@ -1,26 +1,44 @@
-function plusMinus(plus, negative, number, buyText) {
-    let numberOfTimesClicked = 1;
+const overallButton = document.querySelector(".buy-button-total-text");
+
+let totals = [0, 0, 0, 0];
+
+overallButton.innerText = `$0 Buy`;
+
+function updateOverallTotal() {
+    const total = totals.reduce((sum, val) => sum + val, 0);
+    overallButton.innerText = `$${total} Buy`;
+}
+
+function plusMinus(index, plus, minus, number, buyText) {
+    let numberOfTimesClicked = 0;
     number.innerText = numberOfTimesClicked;
-    let multiplier = parseInt(buyText.innerText.replace("$", ""));
+
+    const multiplier = parseInt(buyText.innerText.replace("$", ""));
+
+    function updateDisplay() {
+        number.innerText = numberOfTimesClicked;
+        const itemTotal = multiplier * numberOfTimesClicked;
+        buyText.innerText = `$${itemTotal}`;
+        totals[index] = itemTotal;
+        updateOverallTotal();
+    }
 
     plus.addEventListener("click", function() {
         if (numberOfTimesClicked < 5) {
-            numberOfTimesClicked += 1
-            number.innerText = numberOfTimesClicked;
-            buyText.innerText = "$"+multiplier*numberOfTimesClicked;
+            numberOfTimesClicked += 1;
+            updateDisplay();
         }
     });
 
-    negative.addEventListener("click", function() {
-        if (numberOfTimesClicked > 1) {
-            numberOfTimesClicked -= 1  
-            number.innerText = numberOfTimesClicked; 
-            buyText.innerText = "$"+multiplier*numberOfTimesClicked;
+    minus.addEventListener("click", function() {
+        if (numberOfTimesClicked > 0) {
+            numberOfTimesClicked -= 1;
+            updateDisplay();
         }
     });
 }
 
-plusMinus(document.querySelector(".plus-button-1"), document.querySelector(".minus-button-1"), document.querySelector(".number-1"), document.querySelector(".buy-button-text-1"));
-plusMinus(document.querySelector(".plus-button-2"), document.querySelector(".minus-button-2"), document.querySelector(".number-2"), document.querySelector(".buy-button-text-2"));
-plusMinus(document.querySelector(".plus-button-3"), document.querySelector(".minus-button-3"), document.querySelector(".number-3"), document.querySelector(".buy-button-text-3"));
-plusMinus(document.querySelector(".plus-button-4"), document.querySelector(".minus-button-4"), document.querySelector(".number-4"), document.querySelector(".buy-button-text-4"));
+plusMinus(0, document.querySelector(".plus-button-1"), document.querySelector(".minus-button-1"), document.querySelector(".number-1"), document.querySelector(".buy-button-text-1"));
+plusMinus(1, document.querySelector(".plus-button-2"), document.querySelector(".minus-button-2"), document.querySelector(".number-2"), document.querySelector(".buy-button-text-2"));
+plusMinus(2, document.querySelector(".plus-button-3"), document.querySelector(".minus-button-3"), document.querySelector(".number-3"), document.querySelector(".buy-button-text-3"));
+plusMinus(3, document.querySelector(".plus-button-4"), document.querySelector(".minus-button-4"), document.querySelector(".number-4"), document.querySelector(".buy-button-text-4"));
