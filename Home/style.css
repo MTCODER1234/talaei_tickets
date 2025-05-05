@@ -992,6 +992,83 @@ h2 {
     height: 30vw;
     background-color: #001826;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.footer-content h1 {
+    color: #ffffff;
+    font-family: "Alexandria", sans-serif;
+    font-size: 5vw;
+    font-weight: 250;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: -7vw;
+}
 
+.footer-content p {
+    color: #ffffff;
+    font-family: "Alexandria", sans-serif;
+    font-size: 1vw;
+    font-weight: 250;
+    width: 80%;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: 2vw;
+}
+
+.user-info {
+    width: 12vw;
+    height: 8vw;
+    background-color: #001826d7;
+    position: absolute;
+    margin-left: 74.5vw;
+    margin-top: 1.5vw;
+    border-radius: 2vw 0vw 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0vw;
+    display: none;
+}
+
+.user-info p {
+    color: #00A6FB;
+    font-family: "Alexandria", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 250;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.user-info-icon {
+    color: #00A6FB;
+    font-size: 1.2vw;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.text-icon {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vw;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.text-icon-1 {
+    border-radius: 2vw 0vw 0vw 0vw;
+}
+
+.text-icon-2 {
+    border-radius: 0vw 0vw 2vw 2vw;
+}
+
+.text-icon:hover {
+    background-color: #003b58b6;
+}

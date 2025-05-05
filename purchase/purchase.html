@@ -6,6 +6,8 @@
     <title>Talaei Tickets</title>
     <link rel="stylesheet" href="purchase.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js"></script>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
@@ -15,6 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <section class="load-content">
+        <div class="loader"></div>
+        <h2 class="load-text">LOADING<span class="dots"></span></h2>
+    </section>
+
     <section class="content">
         <section class="navigation-bar-parent">
             <div class="navigation-bar-child">
@@ -28,13 +36,13 @@
                     <p>TALAEI TICKETS</p>
                 </div>
 
-                <div class="user">
+                <!-- <div class="user">
                     <div class="notification">
                         <i class="fas fa-bell notification-icon"></i>
                         <span class="badge">3</span>
                     </div>
                     <i class='fas fa-user-circle user-icon'></i>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -53,9 +61,9 @@
                                 <p class="text-purchase-container number-of-tickets-purchase-container"></p>
                                 <div class="label-and-type-div">
                                     <p class="text-purchase-container label-tickets-purchase-container" id="meionfywu"></p>
-                                    <div class="type-ticket">
+                                    <!-- <div class="type-ticket">
                                         <i class="fa-solid fa-star type-ticket-icon"></i>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <p class="text-purchase-container price-of-tickets-purchase-container">$300</p>
@@ -74,22 +82,29 @@
                     <p class="heading-summary-purchase" id="payment-heading">Payment Methods</p>
 
                     <div class="email-container">
-                        <p class="heading-email">Please Enter Your Email</p>
+                        <p class="heading-email">Enter Email</p>
                         <div class="email-input-div">
                             <i class="fa-solid fa-envelope email-icon"></i>
                             <input class="email-input" id="email-input-value" placeholder="example@gmail.com">
                         </div>
                     </div>
 
+                    <!-- <div class="email-container">
+                        <div class="email-input-div">
+                            <i class="fa-solid fa-key email-icon"></i>
+                            <input class="email-input" id="email-input-value" placeholder="my password">
+                        </div>
+                    </div> -->
+
                     <div class="online-methods-container">
-                        <button class="online-method-button">
-                            <i class="fa-brands fa-google-pay payment-icons"></i>
+                        <button class="online-method-button" id="google-pay-button">
+                            <i class="fa-brands fa-google-pay payment-icons google-payment-icon"></i>
                         </button>
-                        <button class="online-method-button">
-                            <i class="fa-brands fa-cc-paypal payment-icons"></i>
+                        <button class="online-method-button" id="paypal-button">
+                            <i class="fa-brands fa-cc-paypal payment-icons paypal-payment-icon"></i>
                         </button>
-                        <button class="online-method-button">
-                            <i class="fa-brands fa-apple-pay payment-icons"></i>
+                        <button class="online-method-button" id="apple-button">
+                            <i class="fa-brands fa-apple-pay payment-icons apple-payment-icon"></i>
                         </button>
                     </div>
 
@@ -102,6 +117,7 @@
     <script src="back.js"></script>
     <script src="sendEmail.js" defer></script>
     <script src="script.js"></script>
+    <script src="loader.js"></script>
 
 </body>
 </html>
